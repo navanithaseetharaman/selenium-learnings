@@ -22,7 +22,7 @@ public class Autopratice {
 	    driver.manage().window().maximize();
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
 	    driver.findElement(By.linkText("Sign in")).click();
-	    driver.findElement(By.id("email_create")).sendKeys("navanithakrishnan1096@gmail.com");
+	    driver.findElement(By.id("email_create")).sendKeys("navanithakrishnan1098@gmail.com");
         driver.findElement(By.id("SubmitCreate")).click();
         driver.findElement(By.id("id_gender1")).click();
 		driver.findElement(By.name("customer_firstname")).sendKeys("sathish");	
@@ -51,6 +51,7 @@ public class Autopratice {
 			FileUtils.copyFile(source, destination2);
 		} catch (IOException e) {
 			System.out.println("Exception occured :: " + e);
+			System.out.println("my frist ");
 		}
 
 	}
